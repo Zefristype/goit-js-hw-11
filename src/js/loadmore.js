@@ -25,7 +25,7 @@ async function onSearch(e) {
   cleanGallery();
   autoScrollUp();
   page = 1;
-  searchValue = e.currentTarget.elements.searchQuery.value;
+  searchValue = e.currentTarget.elements.searchQuery.value.trim();
   if (!searchValue) {
     return;
   }
